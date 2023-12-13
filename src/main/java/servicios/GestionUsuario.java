@@ -5,7 +5,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
-public class ImplUsuario implements IUsuarioServicio {
+public class GestionUsuario implements IGestionUsuario {
 
 	EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
 	

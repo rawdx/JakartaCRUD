@@ -2,7 +2,7 @@ package servicios;
 
 import daos.Usuario;
 
-public interface IUsuarioServicio {
+public interface IGestionUsuario {
 	void crearUsuario(Usuario Usuario);
 	Usuario leerUsuario(Long id);
 	void actualizarUsuario(Usuario usuario);

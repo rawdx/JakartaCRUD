@@ -18,7 +18,7 @@ import jakarta.persistence.TemporalType;
 public class Usuario {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id", nullable = false)
 	private long idUsuario;
 
@@ -58,9 +58,6 @@ public class Usuario {
 	@ManyToOne
 	@JoinColumn(name = "acceso_id")
 	Acceso acceso;
-	
-//	@OneToMany(mappedBy = "usuario")
-//	List<Prestamo> prestamos;
 
 
 	public Usuario() {
