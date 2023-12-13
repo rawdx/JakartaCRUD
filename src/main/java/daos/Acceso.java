@@ -11,11 +11,12 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Accesos", schema = "examen")
+@Table(name = "accesos", schema = "eeee")
 public class Acceso {
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id", nullable = false)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id_acceso", nullable = false, columnDefinition = "BIGINT")
 	private long idAcceso;
 
 	@Column(name = "codigo", nullable = false)

@@ -14,12 +14,12 @@ import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 
 @Entity
-@Table(name = "Usuarios", schema = "examen")
+@Table(name = "usuarios", schema = "eeee")
 public class Usuario {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id", nullable = false)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id_usuario", nullable = false, columnDefinition = "BIGINT")
 	private long idUsuario;
 
 	@Column(name = "dni_usuario", nullable = false)
