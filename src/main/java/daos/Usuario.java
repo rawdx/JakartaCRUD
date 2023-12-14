@@ -14,7 +14,7 @@ import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 
 @Entity
-@Table(name = "usuarios", schema = "eeee")
+@Table(name = "usuarios", schema = "test")
 public class Usuario {
 	
 	@Id
